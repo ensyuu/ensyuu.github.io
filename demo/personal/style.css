@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: none;
+    font-family:KaiTi, "楷体", sans-serif;
+    font-size: 14px;
+    position: fixed;
+    z-index: 1002;
+    top: 2em;
+    left: 2em;
+    color: black;
+}
+#fullpage, .footer{
+    display: none;
+}
+li{
+    list-style: none;
+    margin-top: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #0a0a0a;
+    transition: text-decoration 3s;
+    -moz-transition: text-decoration 3s;
+    -webkit-transition: text-decoration 3s;
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer{
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    font-family: KaiTi, "楷体", sans-serif;
+    font-size: 14px;
+}
+.slide{
+    background-color: seashell;
+}
+ul .active a{
+    text-decoration: underline;
+}
+/*.slide div{*/
+    /*position: absolute;*/
+    /*!*text-align: center;*!*/
+    /*top:50%;*/
+    /*left: 50%;*/
+/*}*/
+.content{
+    position: relative;
+    bottom: 12%;
+    left: 41%;
+}
+
+/*home*/
+.rotate-wrapper {
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    position: relative;
+}
+
+.rotate-cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin: auto;
+    -webkit-animation: footer-rotate 12s infinite linear;
+    -moz-animation: footer-rotate 12s infinite linear;
+    -o-animation: footer-rotate 12s infinite linear;
+    animation: footer-rotate 12s infinite linear;
+}
+
+.rotate-up {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-100px) rotateX(90deg);
+    background: rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.rotate-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateZ(150px);
+    margin: auto;
+}
+
+.rotate-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-100px);
+    background: rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.rotate-down {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateY(150px) rotateX(270deg);
+    background: rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.rotate-left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateX(-150px) rotateY(270deg);
+    margin: auto;
+}
+
+.rotate-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(100px) rotateY(90deg);
+    background: rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.rotate-central {
+    font-family: 'Microsoft Yahei', Arial,serif;
+    color: #4B8DE1;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #9FBFE0, 1px 1px 3px #AAC5E5;
+}
+
+.rotate-cube div:not(.rotate-central) {
+    /*box-shadow: 1px 1px 1px #0a0a0a;*/
+    /*background: rgba(242, 242, 242, 0.5);*/
+}
+@-webkit-keyframes footer-rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-moz-keyframes footer-rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@-o-keyframes footer-rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes footer-rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+h5{
+    font-family:KaiTi, "楷体", sans-serif;
+    color: #0b0b0b;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: small;
+}
+
+.box{
+    width: 8em;
+    height: 10em;
+    float: left;
+    border: 1px solid #0a0a0a;
+    margin: 8px 8px;
+}
+h1{
+    text-align: center;
+}
+input{
+    display: block;
+    width: 20em;
+    height: 2em;
+    border: 1px solid #0a0a0a;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 20.5em;
+    height: 12em;
+    border: 1px solid #0a0a0a;
+    margin-bottom: 20px;
+}
+.submit{
+    background-color: #0a0a0a;
+    color: white;
+}
