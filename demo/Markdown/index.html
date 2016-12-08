@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown编辑器 | 作品集</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://i1.piimg.com/567571/1dbe72e34c55d7b1.png">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/github-markdown-css/2.4.1/github-markdown.css">
+    <script src="https://cdn.bootcss.com/marked/0.3.5/marked.js"></script>
+</head>
+<body>
+    <div id="editor">
+        <textarea v-bind:value="input" v-on:input="update"></textarea>
+        <div v-html="compiledMarkdown" class="markdown-body"></div>
+    </div>
+    <script src="https://cdn.bootcss.com/vue/2.1.4/vue.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+</body>
+</html>
